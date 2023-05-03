@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="colorAccent">#FF6200FE</color>
-    <color name="colorBackground">#FF37</color>
+    <color name="colorBackground">#FFC107</color>
     <color name="colorRectangle">#455A64</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
