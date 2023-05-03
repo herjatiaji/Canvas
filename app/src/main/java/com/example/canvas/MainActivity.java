@@ -67,6 +67,18 @@ public class MainActivity extends AppCompatActivity {
             mImageView.setImageBitmap(mBitmap);
             mCanvas = new Canvas(mBitmap);
             mCanvas.drawColor(mColorBackground);
+
+            mCanvas.drawText(getString(R.string.keep_tapping),100,100,mPaintText);
+            mOffset += OFFSET;
         }
+        else {
+            mPaint.setColor(mColorRectangle-MULTIPLIER*mOffset);
+            mRect.set(mOffset,mOffset,vWidth-mOffset,
+                    vHeight - mOffset);
+            mCanvas.drawRect(mRect, mPaint);
+            mOffset += OFFSET;
+        }
+
+        v.invalidate();
     }
 }
